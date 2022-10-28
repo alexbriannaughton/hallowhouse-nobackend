@@ -26,16 +26,16 @@ function App() {
   const [color, setColor] = useState("green")
 
   useEffect(() => {
-    fetch('http://localhost:3001/houses')
+    fetch('https://myhallowhouseapi.herokuapp.com/houses')
       .then(r => r.json())
       .then(h => setHouses(h))
   }, [])
 
 
   useEffect(() => {
-    fetch('http://localhost:3001/avatars')
+    fetch('https://myhallowhouseapi.herokuapp.com/avatars')
       .then(r => r.json())
-      .then(setAvatar)
+      .then(console.log)
   }, [])
 
   const [song] = useState(new Audio(music))

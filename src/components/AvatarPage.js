@@ -43,9 +43,9 @@ function AvatarPage({avatars, setSelectedAvatar, image, name, setImage, setName,
             <h1 className="avtarPageTitle">Choose Your Avatar</h1>
             {renderAvatar()}
             <UserForm handleSubmit={handleSubmit} handleName={handleName} image={image} name={name} handleImage={handleImage}/>
-            <div>
+            {/* <div>
                 <img alt="orange background" className="fillImage"/>
-            </div>
+            </div> */}
             <Songbar
             playing={playing}
             handleSongClick={handleSongClick}
