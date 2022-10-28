@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import handleRandomCandy from "./handleRandomCandy";
+import React from "react";
 
 function CandyBucket({ width, setWidth, energy, setEnergy, candies, setCandies }) {
 
@@ -22,11 +21,13 @@ function CandyBucket({ width, setWidth, energy, setEnergy, candies, setCandies }
             className="bucket-container"
         >
             <img
+                alt="candy bucket"
                 className="bucket"
                 src="https://i.imgur.com/3ZwfAoM.png"
             />
             {candies.map(candy =>
                 <img
+                    alt={candy.name}
                     className="candy"
                     key={candy.id}
                     src={candy.image}

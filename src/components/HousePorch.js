@@ -128,7 +128,7 @@ function HousePorch({
         <div>
             {tooMuchCandyMessage===true ? <div className="no-candy">You have too much candy already, kiddo!</div> : null}
             {message ? <div className="no-candy">they didn't answer 💀<br></br>should we tp them?🧻<br></br><button onClick={handleTP}>Yes</button> <button onClick={handleNo}>No</button></div> : null}
-            <img src={background()} style={{ width: '70%', height: '100%' }} />
+            <img alt={currentPorch.id} src={background()} style={{ width: '70%', height: '100%' }} />
             {<EnergyBar
                 width={width}
                 setWidth={setWidth}

@@ -9,7 +9,7 @@ function GameOver(){
 
     useEffect(()=>{
         laughSound.play()
-    },[])
+    })
 
     function handleClick(){
         navigate('/')
@@ -20,7 +20,7 @@ function GameOver(){
     return(
     <div>
         <div>
-            <img className="sewerClown" src="https://i.pinimg.com/originals/bb/2b/f0/bb2bf0a0bc00292a0ebec3cefc495b05.jpg"
+            <img alt="gameover clown" className="sewerClown" src="https://i.pinimg.com/originals/bb/2b/f0/bb2bf0a0bc00292a0ebec3cefc495b05.jpg"
             style={{ height: "700px"}}
             />
         </div>

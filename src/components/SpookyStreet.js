@@ -119,19 +119,21 @@ function SpookyStreet({
                 {renderHouses()}
                 {/* <button className="more-button" onClick={() => setHouseIndex(houseIndex + 1)}>keep walkin</button> */}
             </div>
-            <div className="road-div">
+            <div alt="road div" className="road-div">
                 <img
+                    alt="road"
                     src="https://cliparting.com/wp-content/uploads/2016/10/Road-bitumen-clipart-by-megapixl.jpg"
                     style={{ width: "100%", height: "150px", position: "absolute", left: "0%" }}
                 />
                 <img
+                    alt={selectedAvatar.name}
                     src={selectedAvatar}
                     className="avatar"
                     style={{ left: `${ghostLoc}px` }}
                 />
             </div>
             <div className="grass" style={{ height: "550px" }}>
-                <img />
+                <img alt="grass"/>
             </div>
             <div>
             </div>

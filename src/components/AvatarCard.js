@@ -14,6 +14,7 @@ function AvatarCard({avatar, setSelectedAvatar}){
             <h1 style={{fontSize: "30px"}}>{avatar.name}</h1>
             <img 
             className="avatarImage"
+            alt={avatar.name}
             onClick={() => handleClick(avatar)}
             src={avatar.image}
             />

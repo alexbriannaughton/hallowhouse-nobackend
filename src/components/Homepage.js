@@ -47,7 +47,7 @@ function Homepage({ handleSongClick, playing }) {
                 }
             <div >
                 <h3 style={{ fontSize: "550px" }}></h3>
-                <img style={{ height: "300px" }} />
+                <img alt="" style={{ height: "300px" }} />
                 <Songbar
                     handleSongClick={handleSongClick}
                     playing={playing}
