@@ -1,0 +1,29 @@
+{
+    "avatars": [
+        {
+            "id": 1,
+            "name": "Aang",
+            "image": "https://www.pngmart.com/files/2/Aang-PNG-File.png"
+        },
+        {
+            "id": 2,
+            "name": "Goku",
+            "image": "https://www.pngmart.com/files/2/Goku-PNG-Photo.png"
+        },
+        {
+            "id": 3,
+            "name": "Pikachu",
+            "image": "https://www.pngplay.com/wp-content/uploads/12/Naruto-PNG-Photo-Image.png"
+        },
+        {
+            "id": 4,
+            "name": "Spooky",
+            "image": "https://www.pngplay.com/wp-content/uploads/1/Ghost-PNG-Download-Image.png"
+        },
+        {
+            "name": "lex",
+            "image": "https://i.imgur.com/tnLAz31.png",
+            "id": 5
+        }
+    ]
+}

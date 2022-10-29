@@ -7,7 +7,6 @@ function Homepage({ handleSongClick, playing }) {
 
     const [form, setForm] = useState(false)
     const [inBtn, setInBtn]  =  useState(true)
-    console.log(form)
     const navigate = useNavigate()
     
     function handleAvatar() {

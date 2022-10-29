@@ -2,6 +2,7 @@ import React from "react";
 import AvatarCard from "./AvatarCard";
 import UserForm from "./UserForm";
 import Songbar from "./Songbar";
+// import * as fs from 'fs';
 
 function AvatarPage({avatars, setSelectedAvatar, image, name, setImage, setName, setAvatar, playing, handleSongClick}){
 
@@ -11,12 +12,15 @@ function AvatarPage({avatars, setSelectedAvatar, image, name, setImage, setName,
             name: name,
             image: image
         }
-        fetch("http://localhost:3001/avatars", {
+        // const newObj = {...avatars, newAvatar};
+        // fs.writeFileSync("avatars.json", JSON.stringify(newObj), console.log());
+        // mode: "cors",
+        fetch("https://hallow-house.s3.us-west-2.amazonaws.com/db.json", {
             method:"POST",
             headers:{
               "content-Type": "application/json",
             }, 
-            body: JSON.stringify(newAvatar),
+            body: JSON.stringify(newAvatar)
           })
           .then((r) => r.json())
           .then(setAvatar([...avatars, newAvatar]))
