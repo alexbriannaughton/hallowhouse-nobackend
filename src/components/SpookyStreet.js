@@ -133,7 +133,7 @@ function SpookyStreet({
                 />
             </div>
             <div className="grass" style={{ height: "550px" }}>
-                <img alt="grass"/>
+                <img alt=""/>
             </div>
             <div>
             </div>
