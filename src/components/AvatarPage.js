@@ -17,6 +17,7 @@ function AvatarPage({avatars, setSelectedAvatar, image, name, setImage, setName,
         // mode: "cors",
         fetch("https://hallow-house.s3.us-west-2.amazonaws.com/db.json", {
             method:"POST",
+            mode: "no-cors",
             headers:{
               "content-Type": "application/json",
             }, 

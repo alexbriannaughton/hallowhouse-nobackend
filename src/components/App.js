@@ -26,14 +26,18 @@ function App() {
   const [color, setColor] = useState("green")
 
   useEffect(() => {
-    fetch('https://hallow-house.s3.us-west-2.amazonaws.com/db.json')
+    fetch('https://hallow-house.s3.us-west-2.amazonaws.com/db.json', {
+      mode: "no-cors"
+    })
       .then(r => r.json())
       .then(h => setHouses(h.houses))
   }, [])
 
 
   useEffect(() => {
-    fetch('https://hallow-house.s3.us-west-2.amazonaws.com/db.json')
+    fetch('https://hallow-house.s3.us-west-2.amazonaws.com/db.json', {
+      mode: "no-cors"
+    })
       .then(r => r.json())
       .then(json=>setAvatar(json.avatars))
   }, [])

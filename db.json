@@ -57,6 +57,11 @@
       "id": 4,
       "name": "Spooky",
       "image": "https://www.pngplay.com/wp-content/uploads/1/Ghost-PNG-Download-Image.png"
+    },
+    {
+      "name": "",
+      "image": "",
+      "id": 5
     }
   ]
 }
