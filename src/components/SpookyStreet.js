@@ -103,8 +103,6 @@ function SpookyStreet({
         if (energy < 1) {
             navigate("/GameOver")
         }
-
-
     })
 
 
@@ -112,9 +110,6 @@ function SpookyStreet({
 
     return (
         <div>
-            {/* {direcs1 ? <div className="directions">press the arrow→keys←to→move→←</div> : null}
-            {direcs2 ? <div className="directions">press ↑up↑ when u get to a house↑↑↑</div> : null}
-            {direcs4 ? <div className="directions">click a piece of candy for more energy</div> : null} */}
             <div className="belt">
                 {renderHouses()}
                 {/* <button className="more-button" onClick={() => setHouseIndex(houseIndex + 1)}>keep walkin</button> */}

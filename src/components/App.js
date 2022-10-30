@@ -26,22 +26,79 @@ function App() {
   const [color, setColor] = useState("green")
 
   useEffect(() => {
-    fetch('https://hallow-house.s3.us-west-2.amazonaws.com/db.json')
-      .then(r => r.json())
-      .then(h => setHouses(h.houses))
+    setHouses(
+      [
+        {
+          "id": 1,
+          "image": "https://i.imgur.com/nQY1VK2.png"
+        },
+        {
+          "id": 2,
+          "image": "https://i.imgur.com/ycIYC36.png"
+        },
+        {
+          "id": 3,
+          "image": "https://i.imgur.com/AD7EP2w.png"
+        },
+        {
+          "id": 4,
+          "image": "https://i.imgur.com/BB76G1Y.png"
+        },
+        {
+          "id": 5,
+          "image": "https://i.imgur.com/BebAUom.png"
+        },
+        {
+          "id": 6,
+          "image": "https://i.imgur.com/HabH9V8.png"
+        },
+        {
+          "id": 7,
+          "image": "https://i.imgur.com/9K8jUGB.png"
+        },
+        {
+          "id": 8,
+          "image": "https://i.imgur.com/tlR09kQ.png"
+        },
+        {
+          "id": 9,
+          "image": "https://i.imgur.com/Tm20GqW.png"
+        }
+      ]
+    )
   }, [])
 
 
   useEffect(() => {
-    fetch('https://hallow-house.s3.us-west-2.amazonaws.com/db.json')
-      .then(r => r.json())
-      .then(json=>setAvatar(json.avatars))
+    setAvatar(
+      [
+        {
+          "id": 1,
+          "name": "Aang",
+          "image": "https://www.pngmart.com/files/2/Aang-PNG-File.png"
+        },
+        {
+          "id": 2,
+          "name": "Goku",
+          "image": "https://www.pngmart.com/files/2/Goku-PNG-Photo.png"
+        },
+        {
+          "id": 3,
+          "name": "Pikachu",
+          "image": "https://www.pngplay.com/wp-content/uploads/12/Naruto-PNG-Photo-Image.png"
+        },
+        {
+          "id": 4,
+          "name": "Spooky",
+          "image": "https://www.pngplay.com/wp-content/uploads/1/Ghost-PNG-Download-Image.png"
+        }
+      ]
+    )
   }, [])
 
   const [song] = useState(new Audio(music))
 
   function handleSongClick(e) {
-    console.log(e)
     if (playing === false) {
       song.play()
       isPlaying(true)
