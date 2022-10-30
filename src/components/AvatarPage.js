@@ -15,15 +15,15 @@ function AvatarPage({avatars, setSelectedAvatar, image, name, setImage, setName,
         // const newObj = {...avatars, newAvatar};
         // fs.writeFileSync("avatars.json", JSON.stringify(newObj), console.log());
         // mode: "cors",
-        fetch("https://hallow-house.s3.us-west-2.amazonaws.com/db.json", {
-            method:"POST",
-            headers:{
-              "content-Type": "application/json",
-            }, 
-            body: JSON.stringify(newAvatar)
-          })
-          .then((r) => r.json())
-          .then(setAvatar([...avatars, newAvatar]))
+        // fetch("https://hallow-house.s3.us-west-2.amazonaws.com/db.json", {
+        //     method:"POST",
+        //     headers:{
+        //       "content-Type": "application/json",
+        //     }, 
+        //     body: JSON.stringify(newAvatar)
+        //   })
+        //   .then((r) => r.json())
+          setAvatar([...avatars, newAvatar])
         }
     //handleInput Name for form
     function handleName(e){
