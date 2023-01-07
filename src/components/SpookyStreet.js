@@ -5,6 +5,7 @@ import CandyBucket from "./CandyBucket"
 import { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import Songbar from "./Songbar"
+import Instructions from "./Instructions"
 
 function SpookyStreet({
     selectedAvatar,
@@ -103,8 +104,6 @@ function SpookyStreet({
         if (energy < 1) {
             navigate("/GameOver")
         }
-
-
     })
 
 
@@ -112,26 +111,26 @@ function SpookyStreet({
 
     return (
         <div>
-            {/* {direcs1 ? <div className="directions">press the arrow→keys←to→move→←</div> : null}
-            {direcs2 ? <div className="directions">press ↑up↑ when u get to a house↑↑↑</div> : null}
-            {direcs4 ? <div className="directions">click a piece of candy for more energy</div> : null} */}
+            <Instructions></Instructions>
             <div className="belt">
                 {renderHouses()}
                 {/* <button className="more-button" onClick={() => setHouseIndex(houseIndex + 1)}>keep walkin</button> */}
             </div>
-            <div className="road-div">
+            <div alt="road div" className="road-div">
                 <img
+                    alt="road"
                     src="https://cliparting.com/wp-content/uploads/2016/10/Road-bitumen-clipart-by-megapixl.jpg"
                     style={{ width: "100%", height: "150px", position: "absolute", left: "0%" }}
                 />
                 <img
+                    alt={selectedAvatar.name}
                     src={selectedAvatar}
                     className="avatar"
                     style={{ left: `${ghostLoc}px` }}
                 />
             </div>
             <div className="grass" style={{ height: "550px" }}>
-                <img />
+                <img alt=""/>
             </div>
             <div>
             </div>

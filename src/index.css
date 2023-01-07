@@ -23,6 +23,14 @@
   border-width: 3px;
 }
 .instructBtn{
+  font-size: 40px;
+  color: black;
+  background-color: rgb(40, 171, 223);
+  border: solid;
+  border-color: white;
+  border-width: 3px;
+}
+.instructBtn-in-game {
   margin: 10px;
   font-size: 40px;
   color: black;
@@ -30,6 +38,8 @@
   border: solid;
   border-color: white;
   border-width: 3px;
+  position: absolute;
+  left: 0;
 }
 
 .instructList{
@@ -38,6 +48,18 @@
   border-color: white;
   border-width: 5px;
   background-color: rgb(40, 171, 223) ;
+}
+.instructList-in-game {
+  position: absolute;
+  font-size: 30px;
+  border: solid;
+  border-color: white;
+  border-width: 5px;
+  background-color: rgb(40, 171, 223) ;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
 }
 body{
   background-color: black;
@@ -74,7 +96,7 @@ body{
 }
 
 .avatarPage{
-  background-image: url("https://st.depositphotos.com/2015673/3066/v/600/depositphotos_30668111-stock-illustration-happy-halloween.jpg");
+  background-image: url("https://www.whatspaper.com/wp-content/uploads/2022/10/hd-halloween-iphone-wallpaper-whatspaper-10.jpg");
   margin-top: 0 ;
 }
 
