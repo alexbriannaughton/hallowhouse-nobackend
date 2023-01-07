@@ -16,10 +16,15 @@ function getNewRandomCandy() {
     return newCandies;
 }
 function handleRandomCandy() {
-    function getRandomInt(max) {
-        return Math.floor(Math.random() * max);
+    // function getRandomInt(max) {
+    //     return Math.floor(Math.random() * max);
+    // }
+    function getRandomInt(arr) {
+        const randomIndex = Math.floor(Math.random() * arr.length);
+        return arr[randomIndex];
     }
-    let randomNum = getRandomInt(5)
+    let randomNum = getRandomInt([0,0,1,2,3,4,5])
+    console.log(randomNum)
     let candiesArray = []
     for (let i = randomNum; i >= 0; i--) {
         if (i > 0) {

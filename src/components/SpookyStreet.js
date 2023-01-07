@@ -5,6 +5,7 @@ import CandyBucket from "./CandyBucket"
 import { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import Songbar from "./Songbar"
+import Instructions from "./Instructions"
 
 function SpookyStreet({
     selectedAvatar,
@@ -110,6 +111,7 @@ function SpookyStreet({
 
     return (
         <div>
+            <Instructions></Instructions>
             <div className="belt">
                 {renderHouses()}
                 {/* <button className="more-button" onClick={() => setHouseIndex(houseIndex + 1)}>keep walkin</button> */}
